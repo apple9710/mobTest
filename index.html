@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h4>이것은 <span></span> 입니다</h4>
+    
+
+
+        <script>
+            let cont = document.querySelector('h4 span');
+            let isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+            if(isMobile == true){
+                cont.innerText = "모바일"
+            }else{
+                cont.innerText = "PC"
+            }
+            console.log(navigator.userAgent);
+        </script>
+
+    </body>
+</html>
